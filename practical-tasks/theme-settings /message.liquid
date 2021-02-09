@@ -1,0 +1,14 @@
+{% if settings.message_banner_toggle %}
+    <div>
+        <div class="page-width">
+            {% if settings.message_banner_title %}
+                <h2>{{ settings.message_banner_title }}</h2>
+            {% endif %}
+        
+            {% if settings.message_banner_txt %}
+                <p>{{ settings.message_banner_txt }}</p>
+            {% endif %}
+        </div>
+    </div>
+{% endif %}
+  

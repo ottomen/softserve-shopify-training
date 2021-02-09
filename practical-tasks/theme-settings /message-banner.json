@@ -1,0 +1,21 @@
+{
+    "name": "Message banner",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "message_banner_toggle",
+            "label": "Enable message banner",
+            "default": true
+        },
+        {
+            "type": "text",
+            "id": "message_banner_title",
+            "label": "Message banner title"
+        },
+        {
+            "type": "textarea",
+            "id": "message_banner_txt",
+            "label": "Message banner text"
+        }
+    ]
+}
