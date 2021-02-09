@@ -1,1 +1,2 @@
-# softserve-shopify-training
+# SoftServe Shopify training
+
