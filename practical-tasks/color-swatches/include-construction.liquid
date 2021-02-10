@@ -1,0 +1,12 @@
+{% if product.available and product.variants.size > 1 %}
+  {% assign show_swatches = false %}
+  {% for product_option in product.options_with_values %}
+  	{% assign product_option_name = product_option.name | downcase %}
+ 	{% if product_option_name == "color" %}
+  		{% assign show_swatches = true %}
+  	{% endif %}	
+	{% endfor %}
+  	{% if show_swatches %}
+  		{% render 'swatch' with 'Color' as swatch, product: product %}
+    {% endif %}	
+{% endif %}
