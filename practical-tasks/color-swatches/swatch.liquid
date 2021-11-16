@@ -41,7 +41,6 @@
 </div>
 {% else %}
 <div class="swatch clearfix" data-option-index="{{ option_index }}">
-  <div class="header">{{ swatch }}</div>
   {% assign values = '' %}
   {% for variant in product.variants %}
     {% assign value = variant.options[option_index] %}
@@ -60,7 +59,6 @@
         </label>
         {% else %}
         <label for="swatch-{{ option_index }}-{{ value | handle }}">
-          {{ value }}
           <img class="crossed-out" src="{{ 'soldout.png' | asset_url }}" />
         </label>
         {% endif %}
